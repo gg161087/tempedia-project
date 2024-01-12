@@ -1,5 +1,7 @@
 import { createContext, useState, useEffect } from 'react';
-import { getDynamic } from '../../utils/httpClient.js';
+
+import { getDynamic } from './../../utils/httpClient.js';
+import { Spinner } from './../components/Spinner.jsx';
 
 export const DataContext = createContext();
 
@@ -35,9 +37,7 @@ export const DataProvider = ({ children }) => {
 
     if (!temtems) {
         return (
-            <div className="container">
-                <h2>Loading</h2>
-            </div>
+            <Spinner></Spinner>
         )
     }
     
