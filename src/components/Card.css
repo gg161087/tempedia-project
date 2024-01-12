@@ -1,0 +1,111 @@
+.card {
+    width: 100%;
+    min-height: 55rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    min-height: 45rem;
+    padding: 15px;
+    width: 100%;    
+    border: 1px solid #42424242;
+    box-shadow: 1px 1px 0px hsl(33, 42%, 40%), 2px 2px 0px hsl(33, 42%, 39%),
+        3px 3px 0px hsl(33, 42%, 38%), 4px 4px 0px hsl(33, 42%, 37%),
+        5px 5px 0px hsl(33, 42%, 36%);
+}
+.card:hover {
+    transform: scale(1.05);
+    transition-duration: 200ms;
+}
+.card:hover > img {
+    margin-top: -20px;
+    transform: scale(1.15);
+    transition-duration: 300ms;
+    filter: drop-shadow(1px 3px 0px black);
+}
+.card__header {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.description__id {
+    background-color: white;
+    border: 1px solid #424242dd;
+    width: auto;
+    padding: 1px 4px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+.description__name {
+    margin-top: 8px;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    display: block;
+    font-weight: 900;
+    -webkit-text-stroke: 0.4px #ffffff9e;
+    -webkit-text-fill-color: #000;
+}
+.description__altura,
+.description__peso {
+    margin-top: 2px;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    display: block;
+    color: #000;
+}
+.header__img {
+    background-color: aliceblue;
+    border-radius: 10px;
+    min-width: 14rem;
+    width: 14rem;
+    min-height: 14rem;
+    margin: 0 auto;    
+    transition: all 0.3s ease-in-out;
+}
+.card__body__stats {
+    margin: 0;
+    width: 100%;        
+}
+.stats__item {
+    width: 100%;
+    display: flex;  
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center;     
+}
+.item__name {    
+    text-align: start;
+    font-size: 1.2rem;    
+    min-width: 10%;
+    max-width: 10%;
+    text-transform: capitalize;
+    color: #000;
+}
+.stats__item .item__barra progress{
+    color: red;
+    min-width: 70%;
+    max-width: 70%;    
+    border-color: #000;
+}
+.stats__item .item__numero {
+    font-size: 1.2rem;
+    min-width: 10%;
+    max-width: 10%;
+    text-align: start;    
+    color: #000;
+}
+.type__content {
+    display: flex;
+    justify-content: space-around;
+    margin: 6px 0;
+}
+.evolution__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.evolution__item {
+    text-align: center;
+}
