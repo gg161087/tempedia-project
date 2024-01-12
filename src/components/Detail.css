@@ -11,9 +11,10 @@
 }
   
 .modal-body {
-    background-color: var(--back);
+    background-color: #2A2B3E;
+    border: .6rem solid #1F1F2A;
     width: 40%;
-    min-width: 400px;
+    min-width: 40rem;
     border-radius: 10px;
     position: absolute;
     padding: 1rem;
@@ -23,11 +24,11 @@
 .img-container {
     display: grid;
     place-items: center;
-    width: 300px;
+    width: 30rem;
 }
   
 .img-detail {
-    width: 300px;
+    width: 30rem;
     aspect-ratio: 8/10;
 }
   
@@ -37,7 +38,7 @@
     padding: 4px 6px;
     margin-right: 5px;
     border-radius: 5px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
   
 .data {
